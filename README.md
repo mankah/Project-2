@@ -6,7 +6,7 @@
 - [Overview](#Overview)
 - [Business Problem](#Business-Problem)
 - [Data](#Data)
-   - [House_Data](#house_data)
+   - [House_Data](#Housing-Data)
 - [Methods](#Methods)
 - [Results](#Results)
     - [](#<>)
