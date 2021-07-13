@@ -18,9 +18,8 @@
   
 
 ## Business Problem
-  
+<Name of Company> wants to find a more efficient way to predict the price of a house in Seattle when doing its appraisals. We are tasked with making a model that will be the best at predicting the price of a house while limiting the predictions error.   
  
-  
 ## Data
 
 #### Housing Data
