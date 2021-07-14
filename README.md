@@ -1,4 +1,4 @@
-# Recommendations for *<Appraisal Firm>*
+# Predicting Real Estate Sale Prices in King County, WA *<Appraisal Firm>*
  
 **Authors**: *Ben Bowman, Anthony Conte, Nina Vergara, Manav Kahlon*
   
