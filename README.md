@@ -7,10 +7,12 @@
 - [Data](#Data)
    - [Housing Data](#Housing-Data)
 - [Methods](#Methods)
-- [Results](#Results)
-    - [<>](#<>)
-    - [<>](#<>)
-    - [<>](#<>)
+- [EDA Results: Notable Features](#EDA-Results:-Noteable-Features)
+  - [Building Grade](#Building-Grade)
+  - [Waterfront Properties](#Waterfront-Properties)
+  - [Exposure](#Exposure)
+  - [Livable Square Footage](#Livable-Square-Footage)
+- [Modeling Results](Modeling-Results)
 - [Conclusions](#Conclusions)
 - [For More Information](#For-More-Information)
 - [Repository Structure](#Repository-Structure)
@@ -28,8 +30,41 @@ Acme Appraisals wants to find a more efficient way to predict the price of a hou
 ## Methods
  We first clean the data by handling null values and instituting the correct data types.  We also remove outliers that are three or more standard deviations from the mean in the 'bathrooms', 'bedrooms', and 'sqft_living' features.  We perform some EDA by exploring correlations and inspecting features, then make some inferential plots showing relationships between price and various features.  We create a baseline model for reference, and then begin an iterative process of model-making, creating nine models (plus one baseline model) in total.  For each model, we create training and test data, use cross-validation, and calculate R2 and RMSE.  
     
+## EDA Results: Notable Features
+
+### Building Grade
+![image](https://github.com/mankah/Project-2/blob/master/images/average%20price%20per%20grade.png)
+
+ The quality of a build is reflected in price. As grade increases, so does the average price of houses sold within that grade.
+
+ 
+### Waterfront Properties
+
+![image](https://github.com/mankah/Project-2/blob/master/images/avg%20price%20based%20on%20waterfront.png)
+
+ On average, waterfront properties have a higher selling price than their inland counterparts.
+
+ 
+### Exposure
+
+![image](https://github.com/mankah/Project-2/blob/master/images/avg%20price%20per%20view.png)
+
+On average, properties who are viewed at least 4 times will increase the selling price of a property.
+
+ 
+### Livable Square Footage
+
+![image](https://github.com/mankah/Project-2/blob/master/images/Avg%20space%20by%20price%20range.png)
+
+For properties whose selling price was under a million, the average livable square footage systematically increases with price range. For houses that are sold for more than a million, this effect seems to flatten out. This indicates that livable square footage could be a valuable feature for the lower priced properties, but that there's other factors at play in determining the price for the more expensive houses. 
+
+ 
+![image](https://github.com/mankah/Project-2/blob/master/images/baseline%20model%20error%20comparison.png)
+
+To test the above theory, we created a model that was heavily weighted on livable square footage. We Compared the average error of this model to a model that considered the previously mentioned features. In accounting for all significant features, we dramatically reduced the predicting error.
     
-## Results
+ 
+## Modeling Results
 Models 7 and 9 are polynomic, the others are not.  We performed a cross validation on each model.  The mean test and train R2 scores for the non-polynomic models (1, 2, 3, 4, 5, 6, 8) are close for each model, suggesting minimal variance.  Of these, model 6 performs the best.  Polynomic model 7 produced a large negative mean test R2 score, suggesting overfitting (besides, the train R2 was lower than model 6 anyway).  Model 9 produced the lowest mean train R2 and RMSE, though there was a discrepancy with the test score, again suggesting overfitting.  
  
  The models produced mean R2 training and test scores, and RMSE's as follows:
