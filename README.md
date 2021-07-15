@@ -33,17 +33,7 @@ Acme Appraisals wants to find a more efficient way to predict the price of a hou
 ## Results
 Models 7 and 9 are polynomic, the others are not.  The models produced the R2 training scores and RMSE's as follows:
 
- 
-	Train Score	Test Score	 RMSE 
-Model 1	0.692		 $168,660 
-Model 2	0.756		 $164,378 
-Model 3	0.871		 $121,705 
-Model 4	0.871		 $121,678 
-Model 5	0.871		 $121,678 
-Model 6	0.869		 $120,124 
-Model 7	0.859		 $133,793 
-Model 8	0.858		 $137,291 
-Model 9	0.918		 $104,136 ![image](https://user-images.githubusercontent.com/82840623/125812005-debaf0eb-40e9-439c-846a-10924b635668.png)
+  ![image](https://user-images.githubusercontent.com/82840623/125812005-debaf0eb-40e9-439c-846a-10924b635668.png)
 
     
     
