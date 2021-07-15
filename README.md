@@ -38,7 +38,7 @@ Models 7 and 9 are polynomic, the others are not.  The models produced the R2 tr
     
     
 ## Conclusions
-The average home price in King County is $540,297, with an average price per square foot of $264.  Using this square foot price to predict each house price (a commonly used benchmark) produces a RMSE of $262,267. In order to be useful, our model needs to perform better than this.  
+The average home price in King County is $540,297, with an average price per square foot of $264.  Using this square foot price to predict each house price (a commonly used benchmark) produces a RMSE of $262,267. In order to be useful, our model needs to perform better than this.  Every one of our nine models does this, so based on this metric our model(s) would be useful to the appraisal company.  Model 9 gives the lowest RMSE and just over $100k, though we suspect that there is some overfitting due to discrepancies between R2 scores for the train and test data.  Model 6 is our best non-polynomic model with an RMSE of around $120k, so that is a good option.  Overall, we are willing to accept the overfitting in Model 9 and adopt it for recommendation to the appraisal company.  
     
     
 ## For More Information
