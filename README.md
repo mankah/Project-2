@@ -34,6 +34,7 @@ Acme Appraisals wants to find a more efficient way to predict the price of a hou
  
 ### Zipcode and Average Price
 ![images](./images/Screenshot_2021_07_15_143037.png)
+ 
 Looking at the Average Price per zipcode in King County.
  
 ### Building Grade
