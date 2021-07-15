@@ -5,10 +5,10 @@
 ## Overview
 - [Business Problem](#Business-Problem)
 - [Data](#Data)
-   - [House_Data](#Housing-Data)
+   - [Houseing Data](#Housing-Data)
 - [Methods](#Methods)
 - [Results](#Results)
-    - [](#<>)
+    - [<>](#<>)
     - [<>](#<>)
     - [<>](#<>)
 - [Conclusions](#Conclusions)
