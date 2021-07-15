@@ -31,7 +31,11 @@ Acme Appraisals wants to find a more efficient way to predict the price of a hou
  We first clean the data by handling null values and instituting the correct data types.  We also remove outliers that are three or more standard deviations from the mean in the 'bathrooms', 'bedrooms', and 'sqft_living' features.  We perform some EDA by exploring correlations and inspecting features, then make some inferential plots showing relationships between price and various features.  We create a baseline model for reference, and then begin an iterative process of model-making, creating nine models (plus one baseline model) in total.  For each model, we create training and test data, use cross-validation, and calculate R2 and RMSE.  
     
 ## EDA Results: Notable Features
-
+ 
+### Zipcode and Average Price
+![images](./images/Screenshot_2021_07_15_143037.png)
+Looking at the Average Price per zipcode in King County.
+ 
 ### Building Grade
 ![image](./images/average_price_per_grade.png)
 
