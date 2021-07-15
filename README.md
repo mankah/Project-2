@@ -49,8 +49,8 @@ Please review our full analysis in [our Jupyter Notebook](./Notebook.ipynb) or o
  ```
 ├── data                                <- Sourced from an external source
 ├── gitignore                           <- python files to ignore 
-├── Notebook.ipynb    <- The steps taken to acheive our endgoal
-├── Presentation.pdf            <- PDF of our project presentation                        
+├── Notebook.ipynb                      <- The steps taken to acheive our endgoal
+├── Presentation.pdf                    <- PDF of our project presentation                        
 └── README.md                           <- The README.md
 
 ```
