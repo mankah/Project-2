@@ -18,16 +18,16 @@
   
 
 ## Business Problem
-$ <<Name of Company>> wants to find a more efficient way to predict the price of a house in Seattle when doing its appraisals. We are tasked with making a model that will be the best at predicting the price of a house while limiting the predictions error.   
+Acme Appraisals wants to find a more efficient way to predict the price of a house in Seattle when doing its appraisals. We are tasked with making a model that will be the best at predicting the price of a house while limiting the predictions error.   
  
 ## Data
-
+21597 records of home sales in King County, WA.  
 #### Housing Data
     * kc_house_data.csv
     
     
 ## Methods
-    
+ We first clean the data by handling null values and instituting the correct data types.  We also remove outliers that are three or more standard deviations from the mean in the 'bathrooms', 'bedrooms', and 'sqft_living' features.  We perform some EDA by exploring correlations and inspecting features, then make some inferential plots showing relationships between price and various features.  We create a baseline model for reference, and then begin an iterative process of model-making, creating nine models in total.  
     
     
 ## Results
