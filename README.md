@@ -3,7 +3,6 @@
 **Authors**: *Ben Bowman, Anthony Conte, Nina Vergara, Manav Kahlon*
   
 ## Overview
-- [Overview](#Overview)
 - [Business Problem](#Business-Problem)
 - [Data](#Data)
    - [House_Data](#Housing-Data)
@@ -21,8 +20,8 @@
 Acme Appraisals wants to find a more efficient way to predict the price of a house in Seattle when doing its appraisals. We are tasked with making a model that will be the best at predicting the price of a house while limiting the predictions error.   
  
 ## Data
-21597 records of home sales in King County, WA.  
-#### Housing Data
+21597 records of home sales in King County, WA in 2014 and 2015.  Each record contains 23 columns including, for example, sales price, number of bedrooms and bathrooms, total living space, whether the property in on the water.  
+ #### Housing Data
     * kc_house_data.csv
     
     
@@ -38,19 +37,19 @@ Models 7 and 9 are polynomic, the others are not.  The models produced the R2 tr
     
     
 ## Conclusions
-The average home price in King County is $540,297, with an average price per square foot of $264.  Using this square foot price to predict each house price (a commonly used benchmark) produces a RMSE of $262,267. In order to be useful, our model needs to perform better than this.  Every one of our nine models does this, so based on this metric our model(s) would be useful to the appraisal company.  Model 9 gives the lowest RMSE and just over $100k, though we suspect that there is some overfitting due to discrepancies between R2 scores for the train and test data.  Model 6 is our best non-polynomic model with an RMSE of around $120k, so that is a good option.  Overall, we are willing to accept the overfitting in Model 9 and adopt it for recommendation to the appraisal company.  
+The average home price in King County is $540,297, with an average price per square foot of $264.  Using this square foot price to predict each house price (a commonly used benchmark) produces a RMSE of $262,267. In order to be useful, our model needs to perform better than this.  Every one of our nine models does this, so based on this metric our model(s) would be useful to the appraisal company.  Model 9 gives the lowest RMSE and just over $100k, though we suspect that there is some overfitting due to discrepancies between R2 scores for the train and test data.  Model 6 is our best non-polynomic model with an RMSE of around $120k (and similar train and test R2 scores), so that is a good option. Overall, the overfitting in model 9 concerns us, so we will accept a higher bias in exchange for less variance and recommend model 6 to the appraisal firm.  
     
     
 ## For More Information
     
-Please review our full analysis in [our Jupyter Notebook](./Notebook.ipynb) or our [Microsoft Powerpoint](./Microsoft_powerpoint.pdf).    
+Please review our full analysis in [our Jupyter Notebook](./Notebook.ipynb) or our [Presentation](./presentation.pdf).    
     
 ## Repositroy Structure
  ```
 ├── data                                <- Sourced from an external source
 ├── gitignore                           <- python files to ignore 
-├── Group_1_Technical_Notebook.ipynb    <- The steps taken to acheive our endgoal
-├── Microsoft_powerpoint.pdf            <- PDF of our project presentation                        
+├── Notebook.ipynb                      <- The steps taken to acheive our endgoal
+├── Presentation.pdf                    <- PDF of our project presentation                        
 └── README.md                           <- The README.md
 
 ```
