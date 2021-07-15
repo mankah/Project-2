@@ -5,7 +5,7 @@
 ## Overview
 - [Business Problem](#Business-Problem)
 - [Data](#Data)
-   - [Houseing Data](#Housing-Data)
+   - [Housing Data](#Housing-Data)
 - [Methods](#Methods)
 - [Results](#Results)
     - [<>](#<>)
