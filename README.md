@@ -27,15 +27,28 @@ Acme Appraisals wants to find a more efficient way to predict the price of a hou
     
     
 ## Methods
- We first clean the data by handling null values and instituting the correct data types.  We also remove outliers that are three or more standard deviations from the mean in the 'bathrooms', 'bedrooms', and 'sqft_living' features.  We perform some EDA by exploring correlations and inspecting features, then make some inferential plots showing relationships between price and various features.  We create a baseline model for reference, and then begin an iterative process of model-making, creating nine models in total.  
+ We first clean the data by handling null values and instituting the correct data types.  We also remove outliers that are three or more standard deviations from the mean in the 'bathrooms', 'bedrooms', and 'sqft_living' features.  We perform some EDA by exploring correlations and inspecting features, then make some inferential plots showing relationships between price and various features.  We create a baseline model for reference, and then begin an iterative process of model-making, creating nine models (plus one baseline model) in total.  For each model, we created training and test data, used cross-validation, and calculated R2 and RMSE.  
     
     
 ## Results
-    
+Models 7 and 9 are polynomic, the others are not.  The models produced the R2 training scores and RMSE's as follows:
+ 
+         TrainR2    RMSE
+ Model 1  0.692    $168660
+ Model 2  0.756    $164378
+ Model 3  0.871    $121705
+ Model 4  0.871    $121678
+ Model 5  0.871    $121678
+ Model 6  0.869    $120124
+ Model 7  0.859    $133793
+ Model 8  0.858    $137291
+ Model 9  0.918    $104136
+ 
+
     
     
 ## Conclusions
-    
+The average home price in King County is $540,297, with an average price per square foot of $264.  Using this square foot price to predict each house price (a commonly used benchmark) produces a RMSE of $262,267. In order to be useful, our model needs to perform better than this.  
     
     
 ## For More Information
