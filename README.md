@@ -30,9 +30,12 @@ Acme Appraisals wants to find a more efficient way to predict the price of a hou
     
     
 ## Results
-Models 7 and 9 are polynomic, the others are not.  The models produced the R2 training scores and RMSE's as follows:
+Models 7 and 9 are polynomic, the others are not.  We performed a cross validation on each model.  The mean test and train R2 scores for the non-polynomic models (1, 2, 3, 4, 5, 6, 8) are close for each model, suggesting minimal variance.  Of these, model 6 performs the best.  Polynomic model 7 produced a large negative mean test R2 score, suggesting overfitting (besides, the train R2 was lower than model 6 anyway).  Model 9 produced the lowest mean train R2 and RMSE, though there was a discrepancy with the test score, again suggesting overfitting.  
+ 
+ The models produced mean R2 training and test scores, and RMSE's as follows:
 
-  ![image](https://user-images.githubusercontent.com/82840623/125812005-debaf0eb-40e9-439c-846a-10924b635668.png)
+![image](https://user-images.githubusercontent.com/82840623/125852080-ff83fdf9-7f79-4dcb-8841-d6454d258f69.png)
+
 
     
     
