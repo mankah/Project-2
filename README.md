@@ -21,8 +21,8 @@
 Acme Appraisals wants to find a more efficient way to predict the price of a house in Seattle when doing its appraisals. We are tasked with making a model that will be the best at predicting the price of a house while limiting the predictions error.   
  
 ## Data
-21597 records of home sales in King County, WA.  
-#### Housing Data
+21597 records of home sales in King County, WA in 2014 and 2015.  Each record contains 23 columns including, for example, sales price, number of bedrooms and bathrooms, total living space, whether the property in on the water.  
+ #### Housing Data
     * kc_house_data.csv
     
     
@@ -49,8 +49,8 @@ Please review our full analysis in [our Jupyter Notebook](./Notebook.ipynb) or o
  ```
 ├── data                                <- Sourced from an external source
 ├── gitignore                           <- python files to ignore 
-├── Group_1_Technical_Notebook.ipynb    <- The steps taken to acheive our endgoal
-├── Microsoft_powerpoint.pdf            <- PDF of our project presentation                        
+├── Notebook.ipynb    <- The steps taken to acheive our endgoal
+├── Presentation.pdf            <- PDF of our project presentation                        
 └── README.md                           <- The README.md
 
 ```
