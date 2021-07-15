@@ -33,7 +33,7 @@ Acme Appraisals wants to find a more efficient way to predict the price of a hou
 ## EDA Results: Notable Features
 
 ### Building Grade
-![image]('.images/average-price-per-grade.png')
+![image](./images/average-price-per-grade.png)
 
  The quality of a build is reflected in price. As grade increases, so does the average price of houses sold within that grade.
 
