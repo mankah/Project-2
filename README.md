@@ -33,33 +33,33 @@ Acme Appraisals wants to find a more efficient way to predict the price of a hou
 ## EDA Results: Notable Features
 
 ### Building Grade
-![image](./images/average price per grade.png)
+![image](./images/average_price_per_grade.png)
 
  The quality of a build is reflected in price. As grade increases, so does the average price of houses sold within that grade.
 
  
 ### Waterfront Properties
 
-![image](https://github.com/mankah/Project-2/blob/master/images/avg%20price%20based%20on%20waterfront.png)
+![image](./images/avg_price_based_on_waterfront.png)
 
  On average, waterfront properties have a higher selling price than their inland counterparts.
 
  
 ### Exposure
 
-![image](https://github.com/mankah/Project-2/blob/master/images/avg%20price%20per%20view.png)
+![image](./images/avg_price_per_view.png)
 
 On average, properties who are viewed at least 4 times will increase the selling price of a property.
 
  
 ### Livable Square Footage
 
-![image](https://github.com/mankah/Project-2/blob/master/images/Avg%20space%20by%20price%20range.png)
+![image](./images/Avg_space_by_price_range.png)
 
 For properties whose selling price was under a million, the average livable square footage systematically increases with price range. For houses that are sold for more than a million, this effect seems to flatten out. This indicates that livable square footage could be a valuable feature for the lower priced properties, but that there's other factors at play in determining the price for the more expensive houses. 
 
  
-![image](https://github.com/mankah/Project-2/blob/master/images/baseline%20model%20error%20comparison.png)
+![image](./images/baseline_model_error_comparison.png)
 
 To test the above theory, we created a model that was heavily weighted on livable square footage. We Compared the average error of this model to a model that considered the previously mentioned features. In accounting for all significant features, we dramatically reduced the predicting error.
     
