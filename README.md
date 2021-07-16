@@ -7,7 +7,7 @@
 - [Data](#Data)
    - [Housing Data](#Housing-Data)
 - [Methods](#Methods)
-- [EDA Results: Notable Features](#EDA-Results:-Noteable-Features)
+- [EDA Results: Notable Features](#EDA-Results:-Notable-Features)
   - [Building Grade](#Building-Grade)
   - [Waterfront Properties](#Waterfront-Properties)
   - [Exposure](#Exposure)
