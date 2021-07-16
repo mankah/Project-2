@@ -13,10 +13,11 @@
   - [Waterfront Properties](#Waterfront-Properties)
   - [Exposure](#Exposure)
   - [Livable Square Footage](#Livable-Square-Footage)
-- [Modeling Results](Modeling-Results)
+  - [Error of Price/sqft vs Model](#Error-of-Price/sqft-vs-Model) 
+- [Modeling Results](#Modeling-Results)
 - [Conclusions](#Conclusions)
 - [For More Information](#For-More-Information)
-- [Repository Structure](#Repository-Structure)
+- [Repository Structure](#Repositroy-Structure)
   
 
 ## Business Problem
@@ -64,7 +65,7 @@ On average, properties that are viewed at least 4 times will increase the sellin
 
 For properties whose selling price was under a million, the average livable square footage systematically increases with the price range. For houses that are sold for more than a million, this effect seems to flatten out. This indicates that livable square footage could be a valuable feature for the lower-priced properties, but that there are other factors at play in determining the price for the more expensive houses. 
 
- 
+### Error of Price/sqft vs Model 
 ![image](./images/baseline_model_error_comparison.png)
 
 To test the above theory, we first created a basic model that used average price per square foot to determine home price. We compared the average error of this model to a model that considered the previously mentioned features. By accounting for additional significant features, we dramatically reduced the predicting error.
