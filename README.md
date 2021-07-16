@@ -40,7 +40,7 @@ Looking at the Average Price per zip code in King County.
 ### Building Grade
 ![image](./images/average_price_per_grade.png)
 
-The quality of a build is reflected in the price. As grade increases, so does the average price of houses sold within that grade
+The quality of a build is reflected in the price. As grade increases, so does the average price of houses sold within that grade.
 
  
 ### Waterfront Properties
@@ -54,7 +54,7 @@ The quality of a build is reflected in the price. As grade increases, so does th
 
 ![image](./images/avg_price_per_view.png)
 
-On average, properties that are viewed at least 4 times will increase the selling price of a property
+On average, properties that are viewed at least 4 times will increase the selling price of a property.
 
  
 ### Livable Square Footage
