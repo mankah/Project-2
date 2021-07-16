@@ -85,11 +85,12 @@ The average home price in King County is $540,297, with an average price per squ
     
 ## For More Information
     
-Please review our full analysis in [our Jupyter Notebook](./Notebook.ipynb) or our [Presentation](./presentation.pdf).    
+Please review our full analysis in [our Jupyter Notebook](./Notebook.ipynb) or our [Presentation](./Presentation.pdf).    
     
 ## Repositroy Structure
  ```
 ├── data                                <- Sourced from an external source
+├── images                              <- Images that were used in the presentation                                            
 ├── gitignore                           <- python files to ignore 
 ├── Notebook.ipynb                      <- The steps taken to acheive our endgoal
 ├── Presentation.pdf                    <- PDF of our project presentation                        
