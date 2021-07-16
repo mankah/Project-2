@@ -8,6 +8,7 @@
    - [Housing Data](#Housing-Data)
 - [Methods](#Methods)
 - [EDA Results: Notable Features](#EDA-Results-Notable-Features)
+  - [Zipcode and Average Price](#Zipcode-and-Average-Price)
   - [Building Grade](#Building-Grade)
   - [Waterfront Properties](#Waterfront-Properties)
   - [Exposure](#Exposure)
