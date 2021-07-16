@@ -22,7 +22,7 @@
 Acme Appraisals wants to find a more efficient way to predict the price of a house in Seattle when doing its appraisals. We are tasked with making a model that will be the best at predicting the price of a house while limiting the predictions error.   
  
 ## Data
-21,597 records of home sales in King County, WA in 2014 and 2015.  Each record contains 23 columns including, for example, sales price, number of bedrooms and bathrooms, total living space, whether the property is on the water. 
+21,597 records of home sales in King County, WA in 2014 and 2015.  Each record contains 23 columns including, for example, sales price, number of bedrooms and bathrooms, total living space, and whether the property is on the water. 
  #### Housing Data
     * kc_house_data.csv
     
@@ -66,11 +66,11 @@ For properties whose selling price was under a million, the average livable squa
  
 ![image](./images/baseline_model_error_comparison.png)
 
-To test the above theory, we created a model that was heavily weighted on livable square footage. We Compared the average error of this model to a model that considered the previously mentioned features. In accounting for all significant features, we dramatically reduced the predicting error.
+To test the above theory, we first created a basic model that used average price per square foot to determine home price. We compared the average error of this model to a model that considered the previously mentioned features. By accounting for additional significant features, we dramatically reduced the predicting error.
     
  
 ## Modeling Results
-Models 7 and 9 are polynomic, the others are not.  We performed cross-validations on each model.  The mean test and train R2 scores for the non-polynomic models (1, 2, 3, 4, 5, 6, 8) are close for each model, suggesting minimal variance.  Of these, model 6 performs the best.  Polynomic model 7 produced a large negative mean test R2 score, suggesting overfitting (besides, the train R2 was lower than model 6 anyway).  Model 9 produced the lowest mean train R2 and RMSE, though there was a discrepancy with the test score, again suggesting overfitting. 
+Models 7 and 9 are polynomic, the others are not.  We performed cross-validations on each model.  The mean test and train R2 scores for the non-polynomic models (1, 2, 3, 4, 5, 6, 8) are close for each model, suggesting minimal variance.  Of these, model 6 performs the best: though it's R2 score is only very slightly below models 3, 4, and 5, it produces the lowest RMSE (which is our targeted metric).  Polynomic model 7 produced a large negative mean test R2 score, suggesting overfitting (besides, the train R2 was lower than model 6 anyway).  Model 9 produced the lowest mean train R2 and RMSE, though there was a discrepancy with the test score, again suggesting overfitting. 
  
  The models produced mean R2 training and test scores, and RMSE's as follows:
 
