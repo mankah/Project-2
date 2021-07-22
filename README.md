@@ -26,7 +26,7 @@ Acme Appraisals wants to find a more efficient way to predict the price of a hou
 ## Data
 21,597 records of home sales in King County, WA in 2014 and 2015.  Each record contains 23 columns including, for example, sales price, number of bedrooms and bathrooms, total living space, and whether the property is on the water. 
  #### Housing Data
-    * kc_house_data.csv(./data/kc_house_data.csv)
+    * kc_house_data.csv
     
     
 ## Methods
